@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,34 +10,51 @@
 
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <title>Contacto - Nombre de la Empresa</title>
+    <title>Contacto - PIT BOX Roadside Services</title>
   </head>
   <body>
     <header>
-      <div class="div-logo"><a class="logo" href="../index.html">LOGO</a></div>
+      <div class="div-logo">
+        <a class="logo" href="../index.html"
+          >PIT<span ="color: #d92525">BOX</span></a
+        >
+      </div>
 
       <nav class="header-nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./carrito.html">Carrito</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./carrito.html">Carrito</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="contacto">
         <h1 class="titulo-contacto text-secondary">Contáctanos</h1>
+
         <form class="form-contacto" action="" method="POST">
           <div class="grupo-input">
             <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
           </div>
 
           <div class="grupo-input">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="mensaje">En que puedes ayudarte?:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
           </div>
-          <button type="submit" class="btn-enviar">Enviar</button>
+          <button type="submit" class="btm-enviar">Enviar Mensaje</button>
         </form>
       </section>
     </main>

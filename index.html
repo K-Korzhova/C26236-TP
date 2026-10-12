@@ -1,86 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-<!-- El ultimo que se va a enlanzar es el css, ya que si se enlaza antes de los otros archivos, no se aplicara el estilo a los elementos que se encuentran en los otros archivos. Se agrega a loultimo -->
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <!-- El ultimo que se va a enlanzar es el css, ya que si se enlaza antes de los otros archivos, no se aplicara el estilo a los elementos que se encuentran en los otros archivos. Se agrega a loultimo -->
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>INICIO - PIT BOX Roadside Services</title>
   </head>
   <body>
-
-
     <header>
-<!-- Se agregara una clase al logo para poder darle estilo, ya que el logo es un enlace y no un elemento de imagen -->
-      <div class="div-logo"><a class="logo" href="../index.html">LOGO</a></div>
+      <!-- Se agregara una clase al logo para poder darle estilo, ya que el logo es un enlace y no un elemento de imagen -->
+      <div class="div-logo">
+        <a class="logo" href="./index.html"
+          >PIT<span ="color: #d92525">BOX</span></a
+        >
+      </div>
 
-<!-- Una barra de navegacion con enlaces a las diferentes secciones de la pagina, se agregara una clase a la barra de navegacion para poder darle estilo -->
+      <!-- Una barra de navegacion con enlaces a las diferentes secciones de la pagina, se agregara una clase a la barra de navegacion para poder darle estilo -->
       <nav class="header-nav">
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-          <li><a href="../pages/carrito.html">Carrito</a></li>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="./pages/carrito.html">Carrito</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="Inicio">
+      <section class="inicio">
         <h1>Bienvenido a PIT BOX Roadside Services</h1>
         <p class="parrafo">
           Somos una empresa dedicada a brindar servicios de asistencia en
           carretera, con el objetivo de garantizar la seguridad y tranquilidad
           de nuestros clientes en todo momento.
         </p>
-        </section>  
+      </section>
 
-        <section >
-
-          <h2 class="titulo-servicios text-secondary"> Nuestros Servicios</h2> 
-          <div class="servicios-contenedor">
-            <article class="card text-dark">
-              <img src="./img/paso-de-corriente.png" alt="Paso de corriente" />
-              <h3>Paso de corriente</h3>
-              <p>$ 50.00 </p>
-              <button class="btn-agregar-carrito">Agregar al carrito</button>
-            </article>
-            <article class="card text-dark">
-              <img src="./img/cambio-de-neumaticos.png" alt="Cambio de neumáticos" />
-              <h3>Cambio de neumáticos</h3>
-              <p>$ 100.00 </p>
-              <button class="btn-agregar-carrito">Agregar al carrito</button> 
-            </article>
-            <article class="card text-dark">
-              <img src="./img/entrega-de-combustible.png" alt="Entrega de combustible" />
-              <h3>Entrega de combustible</h3>
-              <p>$ 20.00 </p>
-              <button class="btn-agregar-carrito">Agregar al carrito</button>
-            </article>
-            <article class="card text-dark">
-              <img src="./img/apertura-de-vehiculos.png" alt="Apertura de vehículos" />
-              <h3>Apertura de vehículos</h3>
-              <p> $ 50.00 </p>
-              <button class="btn-agregar-carrito">Agregar al carrito</button>
-            </article>
-            <article class="card text-dark">
-              <img src="./img/diagnostico-rapido.png" alt="Diagnostico rápido por escaner o auxilio mecanico menor"/>
-              <h3>Diagnostico rápido por escaner o auxilio mecanico menor</h3>
-              <p>$ 150.00</p>
-              <button class="btn-agregar-carrito">Agregar al carrito</button>
-            </article>
-          </div>
-          
+      <section>
+        <h2 class="titulo-servicios text-secondary">Nuestros Servicios</h2>
+        <div class="servicios-contenedor">
+          <article class="card text-dark">
+            <img src="./img/paso-de-corriente.png" alt="Paso de corriente" />
+            <h3>Paso de corriente</h3>
+            <p class="precio">$ 50.00</p>
+            <button class="btm-agregar-carrito">Agregar al carrito</button>
+          </article>
+          <article class="card text-dark">
+            <img
+              src="./img/cambio-de-neumaticos.png"
+              alt="Cambio de neumáticos"
+            />
+            <h3>Cambio de neumáticos</h3>
+            <p class="precio">$ 100.00</p>
+            <button class="btm-agregar-carrito">Agregar al carrito</button>
+          </article>
+          <article class="card text-dark">
+            <img
+              src="./img/entrega-de-combustible.png"
+              alt="Entrega de combustible"
+            />
+            <h3>Entrega de combustible</h3>
+            <p class="precio">$ 20.00</p>
+            <button class="btm-agregar-carrito">Agregar al carrito</button>
+          </article>
+          <article class="card text-dark">
+            <img
+              src="./img/apertura-de-vehiculos.png"
+              alt="Apertura de vehículos"
+            />
+            <h3>Apertura de vehículos</h3>
+            <p class="precio">$ 50.00</p>
+            <button class="btm-agregar-carrito">Agregar al carrito</button>
+          </article>
+          <article class="card text-dark">
+            <img
+              src="./img/diagnostico-rapido.png"
+              alt="Diagnostico rápido por escaner o auxilio mecanico menor"
+            />
+            <h3>Diagnostico rápido por escaner o auxilio mecanico menor</h3>
+            <p class="precio">$ 150.00</p>
+            <button class="btm-agregar-carrito">Agregar al carrito</button>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Sitio realizado por K. Korzhova para PIT BOX Roadside Services</p>
       <nav>
         <ul class="footer-social-media">
           <li><img src="./img/facebook.png" alt="Facebook" /></li>
-          <li><img src="./img/whatsapp.png" alt="WhatsApp"  /></li>
-          <li><img src="./img/instagram.png" alt="Instagram"/></li>
+          <li><img src="./img/whatsapp.png" alt="WhatsApp" /></li>
+          <li><img src="./img/instagram.png" alt="Instagram" /></li>
         </ul>
       </nav>
     </footer>

@@ -13,7 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #333;
+  color: #1a1d20;
   background-color: #f4f5f7;
 
   display: flex;
@@ -24,7 +24,7 @@ body {
 main {
   width: 80%;
   margin: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 
   flex: 1;
 
@@ -34,7 +34,8 @@ main {
 }
 
 h1 {
-  font-size: 2.4rem;
+  color: #1a1d20;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
@@ -42,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #1e90ff;
+  color: #d92525;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.15;
@@ -56,11 +57,20 @@ h2 {
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 1rem;
+
+  background-color: #d92525;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(217, 37, 37, 0.35);
+  transition: background-color 0.2s ease;
+}
+.btm:hover {
+  background-color: #b71c1c;
 }
 header,
 footer {
-  background-color: #1e90ff;
-  color: #1a1d20;
+  background-color: #1a1d20;
+  color: #ffffff;
   width: 100%;
 
   display: flex;
@@ -69,6 +79,7 @@ footer {
 }
 footer {
   padding: 1rem 4rem;
+  border-top: 3px solid #d92525;
 }
 
 .div-logo {
@@ -80,10 +91,14 @@ footer {
 .logo,
 .header-nav a {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   color: inherit;
   display: inline-block;
   padding: 2rem;
+  transition: color 0.2s ease;
+}
+.header-nav a:hover {
+  color: #d92525;
 }
 .header-nav {
   margin-right: 2rem;
@@ -99,7 +114,7 @@ footer {
   padding: 1rem;
 }
 .footer-social-media img {
-  width: 5rem;
+  width: 4rem;
   padding: 0.5rem;
 }
 
@@ -107,25 +122,25 @@ footer {
 /*                          colores                                           */
 /* -------------------------------------------------------------------------- */
 .bg-primary {
-  background-color: #1e90ff;
-  color: #fff;
+  background-color: #d92525;
+  color: #ffffff;
 }
 
 .bg-secondary {
   background-color: #f4f5f7;
-  color: #333;
+  color: #1a1d20;
 }
 
 .text-light {
-  color: #fff;
+  color: #ffffff;
 }
 
 .text-dark {
-  color: #333;
+  color: #1a1d20;
 }
 
 .text-secondary {
-  color: #666;
+  color: #64748b;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -146,6 +161,7 @@ footer {
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
+  color: #64748b;
 }
 
 .servicios-contenedor {
@@ -156,9 +172,12 @@ footer {
 }
 
 .card {
-  background-color: #8ac2f0;
-  width: 20rem;
+  background-color: #ffffff;
+  width: 22rem;
   border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -170,6 +189,18 @@ footer {
   width: 100%;
   height: 20rem;
   object-fit: cover;
+}
+.card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1d20;
+  padding: 0 1rem;
+  text-align: center;
+}
+.card .precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d92525;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -188,10 +219,11 @@ footer {
   line-height: 2.15;
   text-align: center;
   margin: 3rem 0;
+  color: #1a1d20;
 }
 .form-contacto {
-  background-color: #8ac2f0;
-  color: #333;
+  background-color: #ffffff;
+  color: #1a1d20;
 
   width: 100%;
   max-width: 50rem;
@@ -200,8 +232,10 @@ footer {
   padding: 3rem;
 
   border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid #d92525;
 
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
 }
 .grupo-input {
   display: flex;
@@ -214,13 +248,76 @@ footer {
   padding: 1rem;
   font-size: 1.6rem;
 
-  color: #333;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  color: #1a1d20;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
   border-radius: 0.5rem;
   outline: none;
 }
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+  border-color: #d92525;
+  background-color: #ffffff;
+}
+
 .grupo-input textarea {
   min-height: 10rem;
   resize: vertical;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          CARRITO                                           */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                          MEDIA QUERIES                                     */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  main {
+    width: 92%;
+  }
+  header {
+    flex-direction: column;
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+  .div-logo {
+    margin-left: 0;
+  }
+
+  .header-nav {
+    margin-right: 0;
+  }
+  .logo,
+  .header-nav a {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .header-nav ul,
+  .footer-social-media {
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 100%;
+    max-width: 30rem;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .form-contacto {
+    padding: 2rem;
+  }
 }
