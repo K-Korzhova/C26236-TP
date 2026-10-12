@@ -88,6 +88,10 @@ footer {
   font-size: 2rem;
 }
 
+.logo span {
+  color: #d92525;
+}
+
 .logo,
 .header-nav a {
   text-decoration: none;
